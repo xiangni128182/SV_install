@@ -1,4 +1,5 @@
 #/usr/bin
+here is to test!!!
 
 ENV=/home/tjiang/Tools/CHN100K/tools/bin
 Tools=/home/tjiang/Tools/CHN100K/tools
