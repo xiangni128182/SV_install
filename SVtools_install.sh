@@ -1,8 +1,9 @@
 #/usr/bin
-here is to test!!!
 
-ENV=/home/tjiang/Tools/CHN100K/tools/bin
-Tools=/home/tjiang/Tools/CHN100K/tools
+# ENV=/home/tjiang/Tools/CHN100K/tools/bin
+# Tools=/home/tjiang/Tools/CHN100K/tools
+ENV=/home/ydliu/bioinformatics_package/svtools/bin
+Tools=/home/ydliu/bioinformatics_package/svtools
 
 # breakdancer
 cd $Tools
@@ -72,3 +73,24 @@ cd $Tools
 git clone --recursive https://github.com/arq5x/lumpy-sv.git
 make
 cp bin/* $ENV/bin/.
+
+####################################################################
+# NovelSeq
+cd $Tools
+git clone https://github.com/ckockan/NovelSeq.git
+cd novelseq
+make
+cp novelseq $ENV/bin  #in this directory have other program
+
+# VariantHunter
+cd $Tools
+git clone https://github.com/BIGLabHYU/VariationHunter.git
+cd clustering
+make
+cp VH $ENV/bin
+cd ../selection
+make
+cp multiInd_SetCover $ENV/bin
+
+
+# MELT
